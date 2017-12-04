@@ -1,0 +1,16 @@
+.btn-default {
+    background: #000;
+    color: #fff;
+ }
+.btn-default:hover {
+    background: #fff;
+    color: #000;
+ }
+.buttons {
+width: 20%;
+table-layout: fixed;
+border-collapse: collapse;
+}
+.buttons button {
+width: 200px;
+}
