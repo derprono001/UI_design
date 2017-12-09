@@ -14,55 +14,50 @@
 		height : 70px;
 	}
 
-	#head {
-		width : 100%;
-		height : 100px;
-		text-align : center;
-		font-size : 48px;
-		border : 3px black solid;
-	}
-
-	#backbutton {
-		margin-left:10px;
-		margin-top:10px;
-	}
-
 	#contents {
+		width : 100%;
+		height : 400px;
+	}
+
+	#bottom {
 		width : 100%;
 		height : auto;
 	}
 
-	#blankbutton {
-		margin : 10px auto;
-		width : 500px;
-		display: block;
+	.botbuttons {
+		width : 200px;
+		height : 200px;
+		display : inline-block;
 	}
 
-	h1 {
-		text-align : center;
+	#layout {
+		width : 50%;
+		/*height : 50%;*/
 	}
+
 
 </style>
 </head>
-
 <body>
+	
 	<div id="toolbar">
 		<img src="./images/backbutton.png" id="backbutton" width="50" height="50">
 	</div>
 
-	<div id="head">Materials</div>
-
-	<div class="navbar">
-		<a href="#home">Home</a>
-		<a href="#comm">Community</a>
-		<a href="#time">Timetable</a>
-		<a href="#con">Consulting</a>
+	<div id="contents">
+		<img src="./images/timetable.jpg" width="100%" height="400">
 	</div>
 
-	<img src="./images/blankbutton.jpg" id="blankbutton">
-	<img src="./images/blankbutton.jpg" id="blankbutton">
-	<img src="./images/blankbutton.jpg" id="blankbutton">
-	<h1>Have your own story? Share with us</h1>
+	<div id="bottom">
+		<div id="layout">
+			<img class="botbuttons" src="./images/alarm.png">
+			<img class="botbuttons" src="./images/coursemanagement2.png">
+		</div>
+		<div id="layout">
+			<img class="botbuttons" src="./images/studymaterial.png">
+			<img class="botbuttons" src="./images/check.png">
+		</div>
+	</div>
+
 </body>
 </html>
-
