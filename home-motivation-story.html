@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+
+<head>
+	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+        <link rel="stylesheet" href="style3.css">
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="bar.js"></script>
+	
+
+	<style>
+	#toolbar {
+		width : 100%;
+		height : 70px;
+	}
+
+	#head {
+		width : 100%;
+		height : 100px;
+		text-align : center;
+		font-size : 48px;
+		border : 3px black solid;
+	}
+
+	#backbutton {
+		margin-left:10px;
+		margin-top:10px;
+	}
+
+	#contents {
+		width : 100%;
+		height : auto;
+	}
+
+	.blankbutton {
+		margin : 30px;
+		width : 500px;
+        float : left;
+	}
+
+    img{
+        display : block;
+    }
+
+	#questionmark {
+		/*margin : 10px auto;*/
+		width : 50px;
+		/*display: block;*/
+		float : right;
+		margin-top : 20px;
+		margin-right : 20px;
+	}
+
+
+
+</style>
+</head>
+
+<body>
+	<div class="wrapper">
+            <nav id="sidebar">
+                <div id="dismiss">
+                    <i class="glyphicon glyphicon-arrow-left"></i>
+                </div>
+                <div class="sidebar-header">
+                    <h3>User's Name</h3>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li><a href="#">Home 1</a></li>
+                            <li><a href="#">Home 2</a></li>
+                            <li><a href="#">Home 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+
+                <ul class="list-unstyled CTAs">
+                    <li><a href="#" class="fadsfdasfda">fdasfdsaf</a></li>
+                    <li><a href="#" class="fasdfdasf">fdasfdsaf</a></li>
+                </ul>
+            </nav>
+
+            <div id="content">
+
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>User's Name</span>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+
+        <div class="navbar2">
+        <a href="#home">Home</a>
+        <a href="#comm">Community</a>
+        <a href="#time">Timetable</a>
+        <a href="#con">Consulting</a>
+        </div>
+
+      </div>
+      <div class="overlay"></div>
+      </div>
+	<div id="toolbar">
+		<img src="./images/backbutton.png" id="backbutton" width="50" height="50">
+	</div>
+
+	<div id="head">Stories from others
+	<img src="./images/questionmark.png" id="questionmark">
+</div>
+
+<table>
+<tr>
+   <td> <img src="./images/stories1.jpg" width="50px" height="150px" class="blankbutton"></td>
+   <td>&nbsp;&nbsp;The story of the “don’t die of ignorance” campaign, by contrast, was an uplifting one, as an unlikely alliance of gay activists, doctors and Tory ministers set out to educate the public about the virus and the various ways it could be transmitted. But it, and the accompanying leaflet sent to every household, put the issue on the nation’s radar and helped dispel many of the entrenched prejudices. Helped by landmark moments such as Diana, Princess of Wales shaking the hand of an Aids patient at a time when gay clubs were being raided by police wearing rubber gloves and nurses were leaving food at ward doorways for fear of “contamination”.</td>
+</tr>
+<tr>
+	<td><img src="./images/stories2.jpg" width="50px" height="150px" class="blankbutton"></td>
+    <td>&nbsp;&nbsp;Carmen was 6 months pregnant when she faced severe burns that changed her life forever..“The reality is that I still don’t know what happened. I was used to driving the motorcycle,” says Carmen. “I reacted when I found myself on the ground covered in fire. I put out the fire on my body by myself. Nobody helped me.When Sometimes I get sad, but I give thanks to the Lord because probably if I had not had that accident, I wouldn’t have a family as the Child Survival program family is for me.” Of 12 people hospitalized at the burn unit while Carmen was there, she was the only survivor. Her daughter, Karla, weighed only one-and-a-half pounds at birth, but they both continue to recover and preserve.</td>
+</tr>
+</table>
+
+	
+</body>
+</html>
+
