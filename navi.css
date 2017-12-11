@@ -1,0 +1,36 @@
+/* Mobile */
+@media only screen and (max-width: 450px) {
+	.navbar2 a { font-size: 12px !important;  }
+} 
+
+* { border: 1px solid black; }
+* {
+	transition: all 0.2s ease;
+}
+
+.item1 {width: 70%;
+		position: relative;}
+.item2 {width: 30% ;}
+#anonymous,#notification { display: flex; }
+
+.button-container { position: relative;
+					width: 50px;
+					height: 23px;
+					border-radius: 40%;
+					left: 50%;
+					top: 50%;
+					transform: translate(
+						-50%,-50%);
+					background-color: grey;
+					border: 2px solid white;
+					 }	
+.button {   position: relative;
+			height: 20px;
+			width: 20px;
+			border-radius: 50%;
+			background-color: white;
+			border: 2px solid white;
+}
+.container-on{ background-color: green; }
+.button-on{ left: 100%;
+			transform: translateX(-100%);}
