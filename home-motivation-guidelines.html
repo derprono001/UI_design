@@ -2,7 +2,7 @@
 
 
 <head>
-		<meta charset="utf-8">
+	<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -14,6 +14,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="bar.js"></script>
+	
 
 	<style>
 	#toolbar {
@@ -45,21 +46,22 @@
 		display: block;
 	}
 
-	h1 {
-		text-align : center;
+	#questionmark {
+		/*margin : 10px auto;*/
+		width : 50px;
+		/*display: block;*/
+		float : right;
+		margin-top : 20px;
+		margin-right : 20px;
 	}
+
+
 
 </style>
 </head>
 
 <body>
-	<div id="toolbar">
-		<img src="./images/backbutton.png" id="backbutton" width="50" height="50">
-	</div>
-
-	<div id="head">Materials</div>
-
-	  <div class="wrapper">
+	<div class="wrapper">
             <nav id="sidebar">
                 <div id="dismiss">
                     <i class="glyphicon glyphicon-arrow-left"></i>
@@ -124,13 +126,22 @@
       </div>
       <div class="overlay"></div>
       </div>
+	<div id="toolbar">
+		<img src="./images/backbutton.png" id="backbutton" width="50" height="50">
+	</div>
 
+	<div id="head">Guidelines
+	<img src="./images/questionmark.png" id="questionmark">
+</div>
+
+
+
+	<img src="./images/guide1.png" id="blankbutton">
+	<img src="./images/guide2.png" id="blankbutton">
+	<img src="./images/guide3.png" id="blankbutton">
+	<img src="./images/guide4.png" id="blankbutton">
+	<img src="./images/guide5.png" id="blankbutton">
 	
-
-	<img src="./images/guidelines.png" id="blankbutton">
-	<img src="./images/video.png" id="blankbutton">
-	<img src="./images/stories.png" id="blankbutton">
-	<h1>Have your own story? Share with us</h1>
 </body>
 </html>
 
