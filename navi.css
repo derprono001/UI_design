@@ -1,19 +1,18 @@
 /* Mobile */
 @media only screen and (max-width: 450px) {
-	.navbar2 a { font-size: 12px !important;  }
+	.navbar2 a { font-size: 8px !important;  }
 } 
 
-* { border: 1px solid black; }
 * {
 	transition: all 0.2s ease;
 }
-
+/* side bar */
 .item1 {width: 70%;
 		position: relative;}
 .item2 {width: 30% ;}
 #anonymous,#notification { display: flex; }
 
-.button-container { position: relative;
+.button-container1, .button-container2 { position: relative;
 					width: 50px;
 					height: 23px;
 					border-radius: 40%;
@@ -24,7 +23,7 @@
 					background-color: grey;
 					border: 2px solid white;
 					 }	
-.button {   position: relative;
+.button1,.button2 {   position: relative;
 			height: 20px;
 			width: 20px;
 			border-radius: 50%;
@@ -32,5 +31,79 @@
 			border: 2px solid white;
 }
 .container-on{ background-color: green; }
-.button-on{ left: 100%;
-			transform: translateX(-100%);}
+.button-on{ transform: translateX(135%);
+			}
+#profile-image { display: block;
+	border-radius: 50%;
+	height:200px;
+	width:200px;
+	border: 3px solid white;
+	
+}
+#profile-container{ 
+	padding: 20px;
+	}
+#image-change-container {
+	position: relative;
+ 
+	}
+#image-change {
+	position: relative;
+	display: block;
+	margin: 0px auto;
+	font-size: 20px;
+	text-align: center;
+}
+#sidebar .sidebar-header {
+	padding:0px;
+	}
+#sidebar ul p {
+	margin: 0px;
+
+}
+
+/*side bar ends */
+
+/*search engine*/
+
+#sidebarCollapse {
+	display: inline-block;
+}
+.search-icon {
+	display: inline-block;
+	height:20px;
+	width:20px;
+	float: right;
+}
+.search-input {
+	display: inline-block;
+	border-radius: 2px;
+	float: right;
+}
+#search-engine {
+	position: fixed;
+	top :30px;
+	right: 20px;
+}
+
+/*small engine for smaller devices*/
+
+@media only screen and (max-width: 380px){
+	.search-input {
+		width: 50%;
+	}
+}
+/*search engine ends/
+
+/* Main search bar */
+.fa {
+   font-size: 30px;
+}
+.navbar2>a {
+padding:1%;
+}
+
+a>p, a>p:hover, a>p:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
