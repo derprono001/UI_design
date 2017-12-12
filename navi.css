@@ -1,6 +1,6 @@
 /* Mobile */
 @media only screen and (max-width: 450px) {
-	.navbar2 a { font-size: 12px !important;  }
+	.navbar2 a { font-size: 8px !important;  }
 } 
 
 * { border: 1px solid black; }
@@ -60,4 +60,38 @@
 	}
 #sidebar ul p {
 	margin: 0px;
+
 }
+
+/*search engine*/
+
+#sidebarCollapse {
+	display: inline-block;
+}
+.search-icon {
+	display: inline-block;
+	height:20px;
+	width:20px;
+	float: right;
+}
+.search-input {
+	display: inline-block;
+	border-radius: 2px;
+	float: right;
+}
+#search-engine {
+	position: fixed;
+	top :30px;
+	right: 20px;
+}
+/*small engine for smaller devices*/
+
+@media only screen and (max-width: 380px){
+	.search-input {
+		width: 50%;
+	}
+}
+
+
+
+/*search engine ends/
