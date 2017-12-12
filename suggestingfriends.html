@@ -1,86 +1,129 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
+<head>
+     <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
         <link rel="stylesheet" href="style3.css">
-
+        <link rel="stylesheet" type="text/css" href="navi.css">
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="bar.js"></script>
 
-    </head>
-    <body>
-        <div class="wrapper">
+    <style>
+
+    #body1 {
+        width : 100%;
+        height : 100%;
+        text-align : center;
+    }
+
+    #helpbutton {
+        margin : 0 auto;
+        display : block;
+    }
+</style>
+
+</head>
+<body>
+    <div class="wrapper">
             <nav id="sidebar">
                 <div id="dismiss">
                     <i class="glyphicon glyphicon-arrow-left"></i>
                 </div>
                 <div class="sidebar-header">
-                    <h3>User's Name</h3>
+                    <div id="profile-container">                        
+                        <img id="profile-image" src="Images/profile.png">
+                    </div>
+                    <div id="image-change-container">
+                        <a id="image-change">Change your avatar</a>
+                    </div>
+
                 </div>
 
                 <ul class="list-unstyled components">
                     <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
-                        <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li><a href="#">Home 1</a></li>
-                            <li><a href="#">Home 2</a></li>
-                            <li><a href="#">Home 3</a></li>
+                        <div id="anonymous">
+                            <p class="item1">
+                                Anonymous mode
+                            </p>
+                            <div class="item2">
+                                <div class="button-container1">
+                                    <div class="button1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="notification">
+                            <p class="item1">
+                                Push notification
+                            </p>
+                            <div class="item2">
+                                <div class="button-container2">
+                                    <div class="button2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Messages</a>
+                    </li>
+                    <li>
+                        <a href="#">Change your password</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact developers</a>
+                    </li>
+                     <li>
+                        <a href="#">License and Policy</a>
+                    </li>
+                    <li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#">About</a>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
-                        <ul class="collapse list-unstyled" id="pageSubmenu">
-                            <li><a href="#">Page 1</a></li>
-                            <li><a href="#">Page 2</a></li>
-                            <li><a href="#">Page 3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-
-                <ul class="list-unstyled CTAs">
-                    <li><a href="#" class="fadsfdasfda">fdasfdsaf</a></li>
-                    <li><a href="#" class="fasdfdasf">fdasfdsaf</a></li>
                 </ul>
             </nav>
 
-            <div id="content">
-                
 
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
+        <div id="content">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
 
-                        <div class="navbar-header">
-                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-                                <i class="glyphicon glyphicon-align-left"></i>
-                                <span>User's Name</span>
-                            </button>
-                        </div>
+                    <div class="navbar-header">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="glyphicon glyphicon-align-left"></i>
+                            <span>User's Name</span>
+                        </button>
+                        <div id="search-engine">
+                            <img src="Images/search.png" class="search-icon">
+                            <input type="text" class="search-input" placeholder="Search...">
                     </div>
-                </nav>
+                </div>
+            </nav>
+            <div id="body1">
+                <h1>Have you tried our post generator?</h1>
+                <br><br>
+                <a href="./counseling.html">
+                    <button type="button" id="helpbutton">Yes, but it didn't help</button><br><br>
+                </a>
+                <a href="./threadmaker.html">
+                    <button type="button" id="helpbutton">No</button>
+                </a>
+            </div>
 
-        <div class="navbar2">
-        <a href="#home">Home</a>
-        <a href="#comm">Community</a>
-        <a href="#time">Timetable</a>
-        <a href="#con">Consulting</a>
+            <div class="navbar2">
+                <a href="#home">Home</a>
+                <a href="#comm">Community</a>
+                <a href="#time">Timetable</a>
+                <a href="#con">Consulting</a>
+            </div>
+
         </div>
-
-      </div>
-      <div class="overlay"></div>
-      </div>
-    </body>
+        <div class="overlay"></div>
+    </div>
+</body>
 </html>
