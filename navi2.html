@@ -13,13 +13,14 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="bar.js"></script>
-        <script>
-        	$(document).ready(function(){
-$("button").click(function(){
-    $("button").toggleClass("button-on");
-});
-        </script>
-
+        <style>  }
+  .blue {
+    color: blue;
+  }
+  .highlight {left: 100%;
+    			transform: translateX(-100%);}
+  }
+  </style>
     </head>
     <body>
         <div class="wrapper">
@@ -102,5 +103,10 @@ $("button").click(function(){
       </div>
       <div class="overlay"></div>
       </div>
+      <script>
+$( "p" ).click(function() {
+  $( this ).toggleClass( "highlight" );
+});
+</script>
     </body>
 </html>
