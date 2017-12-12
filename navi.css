@@ -32,5 +32,5 @@
 			border: 2px solid white;
 }
 .container-on{ background-color: green; }
-.button-on{ left: 60%;
+.button-on{ transform: translateX(135%);
 			}
