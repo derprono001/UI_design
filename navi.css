@@ -34,3 +34,30 @@
 .container-on{ background-color: green; }
 .button-on{ transform: translateX(135%);
 			}
+#profile-image { display: block;
+	border-radius: 50%;
+	height:150px;
+	width:150px;
+	border: 3px solid white;
+	
+}
+#profile-container{ 
+	padding: 20px;
+	}
+#image-change-container {
+	position: relative;
+ 
+	}
+#image-change {
+	position: relative;
+	display: block;
+	margin: 0px auto;
+	font-size: 20px;
+	text-align: center;
+}
+#sidebar .sidebar-header {
+	padding:0px;
+	}
+#sidebar ul p {
+	margin: 0px;
+}
