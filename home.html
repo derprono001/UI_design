@@ -141,13 +141,13 @@
 
 								<div class="container">
 									<img src="Images/frontstory.png" alt="" width="200px" height="80px">
-								  <div id="myCarousel" class="carousel slide">
+								  <div id="myCarousel2" class="carousel slide">
 								    <!-- Indicators -->
 								    <ol class="carousel-indicators">
-								      <li class="item1 active"></li>
-								      <li class="item2"></li>
-								      <li class="item3"></li>
-								      <li class="item4"></li>
+								      <li class="item5 active"></li>
+								      <li class="item6"></li>
+								      <li class="item7"></li>
+								      <li class="item8"></li>
 								    </ol>
 
 								    <!-- Wrapper for slides -->
@@ -188,11 +188,11 @@
 								    </div>
 
 								    <!-- Left and right controls -->
-								    <a class="left carousel-control" href="#myCarousel" role="button">
+								    <a class="left carousel-control" href="#myCarousel2" role="button">
 								      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 								      <span class="sr-only">Previous</span>
 								    </a>
-								    <a class="right carousel-control" href="#myCarousel" role="button">
+								    <a class="right carousel-control" href="#myCarousel2" role="button">
 								      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 								      <span class="sr-only">Next</span>
 								    </a>
@@ -236,6 +236,32 @@
 		    });
 		    $(".right").click(function(){
 		        $("#myCarousel").carousel("next");
+		    });
+		});
+    $(document).ready(function(){
+		    // Activate Carousel
+		    $("#myCarousel2").carousel();
+
+		    // Enable Carousel Indicators
+		    $(".item5").click(function(){
+		        $("#myCarousel2").carousel(0);
+		    });
+		    $(".item6").click(function(){
+		        $("#myCarousel2").carousel(1);
+		    });
+		    $(".item7").click(function(){
+		        $("#myCarousel2").carousel(2);
+		    });
+		    $(".item8").click(function(){
+		        $("#myCarousel2").carousel(3);
+		    });
+
+		    // Enable Carousel Controls
+		    $(".left").click(function(){
+		        $("#myCarousel2").carousel("prev");
+		    });
+		    $(".right").click(function(){
+		        $("#myCarousel2").carousel("next");
 		    });
 		});
 		</script>
