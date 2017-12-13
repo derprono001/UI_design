@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+        <link rel="stylesheet" href="style3.css">
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="bar.js"></script>
+
+				<style>
+				.carousel-inner > .item > img,
+				.carousel-inner > .item > a > img {
+						width: 70%;
+						margin: auto;
+				}
+				</style>
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav id="sidebar">
+                <div id="dismiss">
+                    <i class="glyphicon glyphicon-arrow-left"></i>
+                </div>
+                <div class="sidebar-header">
+                    <h3>User's Name</h3>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li><a href="#">Home 1</a></li>
+                            <li><a href="#">Home 2</a></li>
+                            <li><a href="#">Home 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+
+                <ul class="list-unstyled CTAs">
+                    <li><a href="#" class="fadsfdasfda">fdasfdsaf</a></li>
+                    <li><a href="#" class="fasdfdasf">fdasfdsaf</a></li>
+                </ul>
+            </nav>
+
+            <div id="content">
+
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>User's Name</span>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+
+								<div class="container">
+									<img src="Images/fontvideo.png" alt="" width="200px" height="80px">
+								  <div id="myCarousel" class="carousel slide">
+								    <!-- Indicators -->
+								    <ol class="carousel-indicators">
+								      <li class="item1 active"></li>
+								      <li class="item2"></li>
+								      <li class="item3"></li>
+								      <li class="item4"></li>
+								    </ol>
+
+								    <!-- Wrapper for slides -->
+								    <div class="carousel-inner" role="listbox">
+
+								      <div class="item active">
+								        <img src="Images/1.jpg" alt="Chania" width="460" height="345">
+								        <div class="carousel-caption">
+								          <h3>Chania</h3>
+								          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+								        </div>
+								      </div>
+
+								      <div class="item">
+								        <img src="Images/1.jpg" alt="Chania" width="460" height="345">
+								        <div class="carousel-caption">
+								          <h3>Chania</h3>
+								          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+								        </div>
+								      </div>
+
+								      <div class="item">
+								        <img src="Images/1.jpg" alt="Flower" width="460" height="345">
+								        <div class="carousel-caption">
+								          <h3>Flowers</h3>
+								          <p>Beautiful flowers in Kolymbari, Crete.</p>
+								        </div>
+								      </div>
+
+								      <div class="item">
+								        <img src="Images/1.jpg" alt="Flower" width="460" height="345">
+								        <div class="carousel-caption">
+								          <h3>Flowers</h3>
+								          <p>Beautiful flowers in Kolymbari, Crete.</p>
+								        </div>
+								      </div>
+
+								    </div>
+
+								    <!-- Left and right controls -->
+								    <a class="left carousel-control" href="#myCarousel" role="button">
+								      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								      <span class="sr-only">Previous</span>
+								    </a>
+								    <a class="right carousel-control" href="#myCarousel" role="button">
+								      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								      <span class="sr-only">Next</span>
+								    </a>
+								  </div>
+								</div>
+
+								<div class="container">
+									<img src="Images/frontstory.png" alt="" width="200px" height="80px">
+								  <div id="myCarousel" class="carousel slide">
+								    <!-- Indicators -->
+								    <ol class="carousel-indicators">
+								      <li class="item1 active"></li>
+								      <li class="item2"></li>
+								      <li class="item3"></li>
+								      <li class="item4"></li>
+								    </ol>
+
+								    <!-- Wrapper for slides -->
+								    <div class="carousel-inner" role="listbox">
+
+								      <div class="item active">
+								        <img src="Images/1.jpg" alt="Chania" width="460" height="345">
+								        <div class="carousel-caption">
+								          <h3>Chania</h3>
+								          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+								        </div>
+								      </div>
+
+								      <div class="item">
+								        <img src="Images/1.jpg" alt="Chania" width="460" height="345">
+								        <div class="carousel-caption">
+								          <h3>Chania</h3>
+								          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+								        </div>
+								      </div>
+
+								      <div class="item">
+								        <img src="Images/1.jpg" alt="Flower" width="460" height="345">
+								        <div class="carousel-caption">
+								          <h3>Flowers</h3>
+								          <p>Beautiful flowers in Kolymbari, Crete.</p>
+								        </div>
+								      </div>
+
+								      <div class="item">
+								        <img src="Images/1.jpg" alt="Flower" width="460" height="345">
+								        <div class="carousel-caption">
+								          <h3>Flowers</h3>
+								          <p>Beautiful flowers in Kolymbari, Crete.</p>
+								        </div>
+								      </div>
+
+								    </div>
+
+								    <!-- Left and right controls -->
+								    <a class="left carousel-control" href="#myCarousel" role="button">
+								      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								      <span class="sr-only">Previous</span>
+								    </a>
+								    <a class="right carousel-control" href="#myCarousel" role="button">
+								      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								      <span class="sr-only">Next</span>
+								    </a>
+								  </div>
+								</div>
+
+        <div class="navbar2" style="z-index:5;">
+        <a href="#home">Home</a>
+        <a href="#comm">Community</a>
+        <a href="#time">Timetable</a>
+        <a href="#con">Consulting</a>
+        </div>
+
+      </div>
+      <div class="overlay"></div>
+      </div>
+    </body>
+
+		<script>
+		$(document).ready(function(){
+		    // Activate Carousel
+		    $("#myCarousel").carousel();
+
+		    // Enable Carousel Indicators
+		    $(".item1").click(function(){
+		        $("#myCarousel").carousel(0);
+		    });
+		    $(".item2").click(function(){
+		        $("#myCarousel").carousel(1);
+		    });
+		    $(".item3").click(function(){
+		        $("#myCarousel").carousel(2);
+		    });
+		    $(".item4").click(function(){
+		        $("#myCarousel").carousel(3);
+		    });
+
+		    // Enable Carousel Controls
+		    $(".left").click(function(){
+		        $("#myCarousel").carousel("prev");
+		    });
+		    $(".right").click(function(){
+		        $("#myCarousel").carousel("next");
+		    });
+		});
+		</script>
+
+</html>
