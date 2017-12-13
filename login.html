@@ -1,46 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css" >
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style>
-button{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-top: 200px;
-  }
-   img{
-    display:block;
-    margin-top : 100px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  body{
-  	background: url("Images/circle.png") no-repeat;
-  	background-size: 40%;
-  	background-position: center top;
-  	text-align : center;
-  }
-  </style>
-</head>
-<body>
-	<form action="/abc.php">
-
-			<input type="text" name="Id"> Username<br><br>
-
-	<input type="text" name="Password"> Password
-	<input type="submit" value="Submit">
-
-
-
-</form>
-
-
-
-
-
-</body>
+	<head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="style.css" >
+	  <link rel="stylesheet" type="text/css" href="login.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<img id="logo" src="Images/logo2.png">
+			</div>
+			<div id="login-container">
+				<div id="login">
+					<div id="login-field">
+						<div id="login-field-item1">
+							<input type="text" name="username" placeholder="Username">
+						</div>
+						<div id="login-field-item2">
+							<input type="text" name="password" placeholder="Password">
+						</div>
+					</div>	
+					<div id="login-submit">
+						<button id="submit">Login</button> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
