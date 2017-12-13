@@ -1,9 +1,6 @@
 html, body {
 	height:100%;
 }
-
-* { border: 2px solid black; }
-
 .container {
 	position: relative;
 	top: 50%;
@@ -46,6 +43,11 @@ input {
 	#login-field,#login-submit {
 		width:100%;
 	}
+	#submit{
+		transform: translate(-50%,0%) !important;
+		margin-top:10px;
+		margin-bottom: 10px;
+	}
 }
 /* Small screen */
 #login-field-item1,#login-field-item2 {
@@ -59,4 +61,14 @@ input {
 	top:50%;
 	left:50%;
 	transform: translate(-50%,-50%);
+	border-radius: 3px;
+	color:black;
+}
+#login {
+	       background-color: #00bfff;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            box-shadow: 10px 10px 10px #cccccc;
+            transition: all 0.2s ease;
 }
