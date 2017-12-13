@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" type="text/css" href="navi.css">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="bar.js"></script>
+
+    <style>
+    .blue {
+        color: blue;
+    }
+    .highlight {left: 100%;
+       transform: translateX(-100%);}
+
+       #content1{
+          margin : 0 auto;
+          display: block;
+
+      }
+
+      #texts{
+        margin-left : 15%;
+      }
+
+
+
+  </style>
+  </head>
+<body>
+    <div class="wrapper">
+            <nav id="sidebar">
+                <div id="dismiss">
+                    <i class="glyphicon glyphicon-arrow-left"></i>
+                </div>
+                <div class="sidebar-header">
+                    <div id="profile-container">                        
+                        <img id="profile-image" src="Images/profile.png">
+                    </div>
+                    <div id="image-change-container">
+                        <a id="image-change">Change your avatar</a>
+                    </div>
+
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <div id="anonymous">
+                            <p class="item1">
+                                Anonymous mode
+                            </p>
+                            <div class="item2">
+                                <div class="button-container1">
+                                    <div class="button1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="notification">
+                            <p class="item1">
+                                Push notification
+                            </p>
+                            <div class="item2">
+                                <div class="button-container2">
+                                    <div class="button2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Messages</a>
+                    </li>
+                    <li>
+                        <a href="#">Change your password</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact developers</a>
+                    </li>
+                     <li>
+                        <a href="#">License and Policy</a>
+                    </li>
+                    <li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+              <div id="content">
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="glyphicon glyphicon-align-left"></i>
+                            <span>User's Name</span>
+                        </button>
+                        <div id="search-engine">
+                            <img src="Images/search.png" class="search-icon">
+                            <input type="text" class="search-input" placeholder="Search...">
+                    </div>
+                </div>
+            </nav>
+
+            <div id = "content-body">
+               <h1>Topic</h1>
+               <textarea rows="2" cols="50"></textarea><br>
+                <h1>Content</h1>
+                <textarea rows="6" cols="50"></textarea><br>
+                <button type="button">Submit</button>
+                
+            </div>
+                <div class="navbar2">
+                    <a href="#home">Home</a>
+                    <a href="#comm">Community</a>
+                    <a href="#time">Timetable</a>
+                    <a href="#con">Consulting</a>
+
+            <div class="overlay"></div>
+        </div>
+    </div>
+</body>
+</html>
