@@ -1,186 +1,194 @@
 <!DOCTYPE html>
-
-
+<html>
 <head>
-	<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" type="text/css" href="navi.css">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="bar.js"></script>
+    
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-        <link rel="stylesheet" href="style3.css">
-        <link rel="stylesheet" type="text/css" href="navi.css">
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-        <script src="bar.js"></script>
-	
+    <style>
+    #toolbar {
+      width : 100%;
+      height : 70px;
+  }
 
-	<style>
-	#toolbar {
-		width : 100%;
-		height : 70px;
-	}
+  #head {
+      width : 100%;
+      height : 100px;
+      text-align : center;
+      font-size : 48px;
+      border : 3px black solid;
+  }
 
-	#head {
-		width : 100%;
-		height : 100px;
-		text-align : center;
-		font-size : 48px;
-		border : 3px black solid;
-	}
+  #backbutton {
+      margin-left:10px;
+      margin-top:10px;
+  }
 
-	#backbutton {
-		margin-left:10px;
-		margin-top:10px;
-	}
+  #contents {
+      width : 100%;
+      height : auto;
+  }
 
-	#contents {
-		width : 100%;
-		height : auto;
-	}
+  .blankbutton {
+      margin : 30px;
+      width : 500px;
+      float : left;
+  }
 
-	.blankbutton {
-		margin : 30px;
-		width : 500px;
-        float : left;
-	}
+  img{
+    display : block;
+}
 
-    img{
-        display : block;
-    }
+#questionmark {
+  /*margin : 10px auto;*/
+  width : 50px;
+  /*display: block;*/
+  float : right;
+  margin-top : 20px;
+  margin-right : 20px;
+}
+.container{
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
 
-	#questionmark {
-		/*margin : 10px auto;*/
-		width : 50px;
-		/*display: block;*/
-		float : right;
-		margin-top : 20px;
-		margin-right : 20px;
-	}
-    .container{
-        padding: 20px;
-        text-align: center;
-        margin-bottom: 30px;
-
-    }
-    .story-image{
-        width: 100%;
-        max-width: 400px;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+}
+.story-image{
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.wrapper2         {
+    width:80%;height:100%;margin:0 auto;max-width: 1080px
+}
 
 </style>
 </head>
 
 <body>
-	<div class="wrapper">
-<nav id="sidebar">
-                <div id="dismiss">
-                    <i class="glyphicon glyphicon-arrow-left"></i>
-                </div>
-                <div class="sidebar-header">
-                    <div id="profile-container">                        
-                        <img id="profile-image" src="Images/profile.png">
-                    </div>
-                    <div id="image-change-container">
-                        <a id="image-change">Change your avatar</a>
-                    </div>
-
-                </div>
-
-                <ul class="list-unstyled components">
-                    <li class="active">
-                        <div id="anonymous">
-                            <p class="item1">
-                                Anonymous mode
-                            </p>
-                            <div class="item2">
-                                <div class="button-container1">
-                                    <div class="button1"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div id="notification">
-                            <p class="item1">
-                                Push notification
-                            </p>
-                            <div class="item2">
-                                <div class="button-container2">
-                                    <div class="button2"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">Messages</a>
-                    </li>
-                    <li>
-                        <a href="#">Change your password</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact developers</a>
-                    </li>
-                     <li>
-                        <a href="#">License and Policy</a>
-                    </li>
-                    <li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-
-
-            <div id="content">
-
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-
-                        <div class="navbar-header">
-                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-                                <i class="glyphicon glyphicon-align-left"></i>
-                                <span>User's Name</span>
-                            </button>
-                        </div>
-                    </div>
-                </nav>
-
-        <div class="navbar2" style="z-index:5;">
-        <a href="#home"><i class="fa fa-home"></i><p>Home</p></a>
-        <a href="#comm"><i class="fa fa-users"></i><p>Community</p></a>
-        <a href="#time"><i class="fa fa-calendar"></i><p>Schedule</p></a>
-        <a href="#con"><i class="fa fa-heart"></i><p>Consulting</p></a>
+   <div class="wrapper">
+    <nav id="sidebar">
+        <div id="dismiss">
+            <i class="glyphicon glyphicon-arrow-left"></i>
         </div>
-    
+        <div class="sidebar-header">
+           <div id="profile-container">
+              <img id="profile-image" src="Images/profile.png">
+          </div>
+          <div id="image-change-container">
+              <a id="image-change">Change your avatar</a>
+          </div>
 
       </div>
-      <div class="overlay"></div>
-      </div>
-	<div id="toolbar">
-		<img src="./images/backbutton.png" id="backbutton" width="50" height="50">
-	</div>
 
-	<div id="head">Stories from others
-	<img src="./images/questionmark.png" id="questionmark">
-</div>
-<div class="container">
+      <ul class="list-unstyled components">
+        <li class="active">
+           <div id="anonymous">
+              <p class="item1">
+                 Anonymous mode
+             </p>
+             <div class="item2">
+              <div class="button-container1">
+                 <div class="button1"></div>
+             </div>
+         </div>
+     </div>
+ </li>
+ <li>
+    <div id="notification">
+       <p class="item1">
+          Push notification
+      </p>
+      <div class="item2">
+          <div class="button-container2">
+             <div class="button2"></div>
+         </div>
+     </div>
+ </div>
+</li>
+<li>
+    <a href="#">Messages</a>
+</li>
+<li>
+    <a href="#">Change your password</a>
+</li>
+<li>
+    <a href="#">Contact developers</a>
+</li>
+<li>
+    <a href="#">License and Policy</a>
+</li>
+<li>
+</ul>
+</li>
+</ul>
+</nav>
+
+<div id="content">
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                    <i class="glyphicon glyphicon-align-left"></i>
+                    <span>User's Name</span>
+                </button>
+                <form style="float:right;">
+                  <input class="xsearch" type="text" name="search" placeholder="Search..">
+              </form>
+
+          </div>
+
+      </nav>
+
+      
+
+      <div id="head">Stories from others
+       <img src="./images/questionmark.png" id="questionmark">
+   </div>
+   <div class="container">
     <div class="container-fluid">
         <img class="story-image" src="./images/stories1.jpg" class="blankbutton">
     </div>
-       <p>&nbsp;&nbsp;The story of the “don’t die of ignorance” campaign, by contrast, was an uplifting one, as an unlikely alliance of gay activists, doctors and Tory ministers set out to educate the public about the virus and the various ways it could be transmitted. But it, and the accompanying leaflet sent to every household, put the issue on the nation’s radar and helped dispel many of the entrenched prejudices. Helped by landmark moments such as Diana, Princess of Wales shaking the hand of an Aids patient at a time when gay clubs were being raided by police wearing rubber gloves and nurses were leaving food at ward doorways for fear of “contamination”.</p>
+    <p>&nbsp;&nbsp;The story of the “don’t die of ignorance” campaign, by contrast, was an uplifting one, as an unlikely alliance of gay activists, doctors and Tory ministers set out to educate the public about the virus and the various ways it could be transmitted. But it, and the accompanying leaflet sent to every household, put the issue on the nation’s radar and helped dispel many of the entrenched prejudices. Helped by landmark moments such as Diana, Princess of Wales shaking the hand of an Aids patient at a time when gay clubs were being raided by police wearing rubber gloves and nurses were leaving food at ward doorways for fear of “contamination”.</p>
 </div>
 <div class="container">
     <div class="container-fluid">
         <img class="story-image" src="./images/stories2.jpg" class="blankbutton">
     </div>
-       <p>&nbsp;&nbsp;Carmen was 6 months pregnant when she faced severe burns that changed her life forever..“The reality is that I still don’t know what happened. I was used to driving the motorcycle,” says Carmen. “I reacted when I found myself on the ground covered in fire. I put out the fire on my body by myself. Nobody helped me.When Sometimes I get sad, but I give thanks to the Lord because probably if I had not had that accident, I wouldn’t have a family as the Child Survival program family is for me.” Of 12 people hospitalized at the burn unit while Carmen was there, she was the only survivor. Her daughter, Karla, weighed only one-and-a-half pounds at birth, but they both continue to recover and preserve.</p>
+    <p>&nbsp;&nbsp;Carmen was 6 months pregnant when she faced severe burns that changed her life forever..“The reality is that I still don’t know what happened. I was used to driving the motorcycle,” says Carmen. “I reacted when I found myself on the ground covered in fire. I put out the fire on my body by myself. Nobody helped me.When Sometimes I get sad, but I give thanks to the Lord because probably if I had not had that accident, I wouldn’t have a family as the Child Survival program family is for me.” Of 12 people hospitalized at the burn unit while Carmen was there, she was the only survivor. Her daughter, Karla, weighed only one-and-a-half pounds at birth, but they both continue to recover and preserve.</p>
 </div>
-	   <script type="text/javascript" src="navi.js"></script>
+
+
+<div class="navbar2" style="z-index:5;">
+   <a href="home.html"><i class="fa fa-home"></i><p>Home</p></a>
+                <a href="community.html"><i class="fa fa-users"></i><p>Community</p></a>
+                <a href="timetable.html"><i class="fa fa-calendar"></i><p>Schedule</p></a>
+                <a href="counseling.html"><i class="fa fa-heart"></i><p>Consulting</p></a>
+</div>
+</div>
+
+<div class="overlay"></div>
+
+<script>
+    $( "p" ).click(function() {
+      $( this ).toggleClass( "highlight" );
+  });
+</script>
+
+<script type="text/javascript" src="navi.js"></script>
 
 </body>
 </html>
