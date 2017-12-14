@@ -2,17 +2,17 @@
 <html>
 <head>
     <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-        <link rel="stylesheet" href="style3.css">
-        <link rel="stylesheet" type="text/css" href="navi.css">
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-        <script src="bar.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" type="text/css" href="navi.css">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="bar.js"></script>
 
     <style>
     #head {
@@ -59,79 +59,80 @@
 
 </head>
 <body>
-    <div class="wrapper">
-            <nav id="sidebar">
-                <div id="dismiss">
-                    <i class="glyphicon glyphicon-arrow-left"></i>
-                </div>
-                <div class="sidebar-header">
-                    <div id="profile-container">
-                        <img id="profile-image" src="Images/profile.png">
-                    </div>
-                    <div id="image-change-container">
-                        <a id="image-change">Change your avatar</a>
-                    </div>
+<div class="wrapper">
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="glyphicon glyphicon-arrow-left"></i>
+            </div>
+            <div class="sidebar-header">
+             <div id="profile-container">
+              <img id="profile-image" src="Images/profile.png">
+          </div>
+          <div id="image-change-container">
+              <a id="image-change">Change your avatar</a>
+          </div>
 
-                </div>
+      </div>
 
-                <ul class="list-unstyled components">
-                    <li class="active">
-                        <div id="anonymous">
-                            <p class="item1">
-                                Anonymous mode
-                            </p>
-                            <div class="item2">
-                                <div class="button-container1">
-                                    <div class="button1"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div id="notification">
-                            <p class="item1">
-                                Push notification
-                            </p>
-                            <div class="item2">
-                                <div class="button-container2">
-                                    <div class="button2"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">Messages</a>
-                    </li>
-                    <li>
-                        <a href="#">Change your password</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact developers</a>
-                    </li>
-                     <li>
-                        <a href="#">License and Policy</a>
-                    </li>
-                    <li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+      <ul class="list-unstyled components">
+        <li class="active">
+         <div id="anonymous">
+          <p class="item1">
+           Anonymous mode
+       </p>
+       <div class="item2">
+          <div class="button-container1">
+           <div class="button1"></div>
+       </div>
+   </div>
+</div>
+</li>
+<li>
+    <div id="notification">
+     <p class="item1">
+      Push notification
+  </p>
+  <div class="item2">
+      <div class="button-container2">
+       <div class="button2"></div>
+   </div>
+</div>
+</div>
+</li>
+<li>
+    <a href="#">Messages</a>
+</li>
+<li>
+    <a href="#">Change your password</a>
+</li>
+<li>
+    <a href="#">Contact developers</a>
+</li>
+<li>
+    <a href="#">License and Policy</a>
+</li>
+<li>
+</ul>
+</li>
+</ul>
+</nav>
 
-        <div id="content">
+<div id="content">
 
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                    <i class="glyphicon glyphicon-align-left"></i>
+                    <span>User's Name</span>
+                </button>
+                <form style="float:right;">
+                  <input class="xsearch" type="text" name="search" placeholder="Search..">
+              </form>
 
-                    <div class="navbar-header">
-                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-                            <i class="glyphicon glyphicon-align-left"></i>
-                            <span>User's Name</span>
-                        </button>
-                        <form style="float:right;">
-                          <input class="xsearch" type="text" name="search" placeholder="Search..">
-                        </form>
-                </div>
-            </nav>
+      </div>
+
+  </nav>
             <div id="head">Counseling</div>
 	        <div id="body1">
 	        	<div class="counseling-image-container" >
@@ -152,8 +153,13 @@
                <br>
                <h1>&nbsp&nbsp&nbspNo session in progress.</h1>
            </div>
+
+<script type="text/javascript" src="navi.js"></script>
+
+       
+             
     <div class="navbar2" style="z-index:50;">
-                <a href="home.html"><i class="fa fa-home"></i><p>Home</p></a>
+               <a href="home.html"><i class="fa fa-home"></i><p>Home</p></a>
                 <a href="community.html"><i class="fa fa-users"></i><p>Community</p></a>
                 <a href="timetable.html"><i class="fa fa-calendar"></i><p>Schedule</p></a>
                 <a href="counseling.html"><i class="fa fa-heart"></i><p>Consulting</p></a>
@@ -163,6 +169,11 @@
     <div class="overlay"></div>
 </div>
 <script type="text/javascript" src="navi.js"></script>
+<script>
+    $( "p" ).click(function() {
+      $( this ).toggleClass( "highlight" );
+  });
+</script>
 </body>
 </html>
 
