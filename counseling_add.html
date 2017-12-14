@@ -20,73 +20,66 @@
         color: blue;
     }
     .highlight {left: 100%;
-     transform: translateX(-100%);}
+       transform: translateX(-100%);}
 
-     #content1{
-      margin : 0 auto;
-      display: block;
+       #content1{
+          margin : 0 auto;
+          display: block;
 
-  }
+      }
 
-  #texts{
-    margin-left : 15%;
-}
+      #texts{
+        margin-left : 15%;
+    }
+    textarea {
+        width : 100%;
+    }
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
 
-textarea {
-    width : 100%;
-    border-top: 1px;
-}
-* {
-    transition: all 0.2s ease;
-}
+    /* Modal Content/Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+    }
 
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
+    /* The Close Button */
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
 
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
 
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
+    tr {
+        width : 100%;
+        border : 3px solid;
+    }
 
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-tr {
-    width : 100%;
-    border : 3px solid;
-}
-
-table {
-    width : 100%;
-}
-
+    table {
+        width : 100%;
+    }
 #cnbtn {
     margin : 0 auto;
     display : block;
@@ -94,8 +87,6 @@ table {
 #content-body{
     padding: 20px;
 }
-
-
 </style>
 </head>
 <body>
@@ -230,27 +221,31 @@ table {
                         </tr>
                         <tr>
                             <td class="advisor-list-item">
-                                <p ><img id="pic" src="./images/profile.png" width="20" height="20"><span>John D.</span></p>
+                                <p ><img src="./images/profile.png" width="20" height="20"><span>John D.</span></p>
                             </td>
                         </tr>
                     </table>
 
+
+                    </div>
+                    <button type="button" id="cnbtn">Cancel</button>
+                    
                 </div>
-                <button type="button" id="cnbtn">Cancel</button>
 
             </div>
 
+            </div>
+        </div>
+        <div class="navbar2" style="z-index:5;">
+            <a href="#home"><i class="fa fa-home"></i><p>Home</p></a>
+            <a href="#comm"><i class="fa fa-users"></i><p>Community</p></a>
+            <a href="#time"><i class="fa fa-calendar"></i><p>Schedule</p></a>
+            <a href="#con"><i class="fa fa-heart"></i><p>Consulting</p></a>
         </div>
     </div>
-    <div class="navbar2" style="z-index:5;">
-        <a href="#home"><i class="fa fa-home"></i><p>Home</p></a>
-        <a href="#comm"><i class="fa fa-users"></i><p>Community</p></a>
-        <a href="#time"><i class="fa fa-calendar"></i><p>Schedule</p></a>
-        <a href="#con"><i class="fa fa-heart"></i><p>Consulting</p></a>
-    </div>
         <div class="overlay"></div>
-    
 </div>
+<script type="text/javascript" src="navi.js"></script>
 
 <script>
         // Get the modal
