@@ -1,7 +1,7 @@
 /* Mobile */
 @media only screen and (max-width: 450px) {
 	.navbar2 a { font-size: 8px !important;  }
-} 
+}
 
 * {
 	transition: all 0.2s ease;
@@ -22,7 +22,7 @@
 						-50%,-50%);
 					background-color: grey;
 					border: 2px solid white;
-					 }	
+					 }
 .button1,.button2 {   position: relative;
 			height: 20px;
 			width: 20px;
@@ -38,14 +38,14 @@
 	height:200px;
 	width:200px;
 	border: 3px solid white;
-	
+
 }
-#profile-container{ 
+#profile-container{
 	padding: 20px;
 	}
 #image-change-container {
 	position: relative;
- 
+
 	}
 #image-change {
 	position: relative;
@@ -70,9 +70,8 @@
 	display: inline-block;
 }
 .search-icon {
-	display: inline-block;
-	height:20px;
-	width:20px;
+	width: 50px;
+	height: 50px;
 	float: right;
 }
 .search-input {
