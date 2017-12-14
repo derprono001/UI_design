@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
         <link rel="stylesheet" href="style3.css">
-
+        <link rel="stylesheet" type="text/css" href="navi.css">
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -21,7 +21,7 @@
 						margin: auto;
 				}
         .checkboxtext{
-          font-size: 24px;
+          font-size: 20px;
           padding: 20px;
         }
 				</style>
@@ -29,45 +29,62 @@
     </head>
     <body>
         <div class="wrapper">
-            <nav id="sidebar">
-                <div id="dismiss">
-                    <i class="glyphicon glyphicon-arrow-left"></i>
+          <nav id="sidebar">
+              <div id="dismiss">
+                  <i class="glyphicon glyphicon-arrow-left"></i>
+              </div>
+              <div class="sidebar-header">
+                <div id="profile-container">
+                  <img id="profile-image" src="Images/profile.png">
                 </div>
-                <div class="sidebar-header">
-                    <h3>User's Name</h3>
+                <div id="image-change-container">
+                  <a id="image-change">Change your avatar</a>
                 </div>
 
-                <ul class="list-unstyled components">
-                    <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
-                        <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li><a href="#">Home 1</a></li>
-                            <li><a href="#">Home 2</a></li>
-                            <li><a href="#">Home 3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
-                        <ul class="collapse list-unstyled" id="pageSubmenu">
-                            <li><a href="#">Page 1</a></li>
-                            <li><a href="#">Page 2</a></li>
-                            <li><a href="#">Page 3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
+              </div>
 
-                <ul class="list-unstyled CTAs">
-                    <li><a href="#" class="fadsfdasfda">fdasfdsaf</a></li>
-                    <li><a href="#" class="fasdfdasf">fdasfdsaf</a></li>
-                </ul>
-            </nav>
+              <ul class="list-unstyled components">
+                  <li class="active">
+                    <div id="anonymous">
+                      <p class="item1">
+                        Anonymous mode
+                      </p>
+                        <div class="item2">
+                          <div class="button-container1">
+                            <div class="button1"></div>
+                          </div>
+                        </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div id="notification">
+                        <p class="item1">
+                          Push notification
+                        </p>
+                        <div class="item2">
+                          <div class="button-container2">
+                            <div class="button2"></div>
+                          </div>
+                        </div>
+                      </div>
+                  </li>
+                  <li>
+                      <a href="#">Messages</a>
+                  </li>
+                  <li>
+                      <a href="#">Change your password</a>
+                  </li>
+                  <li>
+                      <a href="#">Contact developers</a>
+                  </li>
+                   <li>
+                      <a href="#">License and Policy</a>
+                  </li>
+                  <li>
+                      </ul>
+                  </li>
+              </ul>
+          </nav>
             <div id="content">
 
                 <nav class="navbar navbar-default">
@@ -83,7 +100,7 @@
                 </nav>
 								<div class="container">
                   <div style="width:300px; margin-left:auto; margin-right:auto;">
-                  <button style="font-size:40px; padding: 20px 40px 20px 40px; width:300px;" type="button"
+                  <button style="font-size:30px; padding: 20px 40px 20px 40px; width:300px; margin: 10px 0px 10px 0px;" type="button"
                   class="btn btn-info" data-toggle="collapse" data-target="#demo">To-do List</button>
                   </div>
                   <div id="demo" class="collapse">
@@ -91,22 +108,23 @@
                                     background-color: rgb(230, 232, 237);
                                     margin-left: auto;
                                     margin-right: auto;
-                                    width: 600px;
+                                    width: 500px;
                                     padding: 20px;
                                     border-radius: 5px;
                                     box-shadow: 5px 15px 15px rgb(20,20,20);">
                     <form action="/action_page.php" method="get">
-                      <input type="checkbox"><span class="checkboxtext">do stuff 1</span><span style="margin-left:340px" class="checkboxtext">x</span><br>
-                      <input type="checkbox" checked="checked"><span class="checkboxtext">do stuff 2</span><span style="margin-left:335px" class="checkboxtext">x</span><br>
-                      <input type="checkbox"><span class="checkboxtext">do stuff 3</span><span style="margin-left:335px" class="checkboxtext">x</span><br>
-                      <input type="checkbox"><span class="checkboxtext">do stuff 4</span><span style="margin-left:335px" class="checkboxtext">x</span><br>
-                      <input type="checkbox"><span class="checkboxtext">do stuff 5</span><span style="margin-left:335px" class="checkboxtext">x</span><br>
-                      <input type="checkbox"><span class="checkboxtext">do stuff 6</span><span style="margin-left:335px" class="checkboxtext">x</span><br>
-                      <input type="checkbox"><span class="checkboxtext">do stuff 7</span><span style="margin-left:335px" class="checkboxtext">x</span><br>
+                      <input type="checkbox"><span class="checkboxtext">do stuff 1</span><span style="margin-left:255px" class="checkboxtext">x</span><br>
+                      <input type="checkbox" checked="checked"><span class="checkboxtext">do stuff 2</span><span style="margin-left:250px" class="checkboxtext">x</span><br>
+                      <input type="checkbox"><span class="checkboxtext">do stuff 3</span><span style="margin-left:250px" class="checkboxtext">x</span><br>
+                      <input type="checkbox"><span class="checkboxtext">do stuff 4</span><span style="margin-left:250px" class="checkboxtext">x</span><br>
+                      <input type="checkbox"><span class="checkboxtext">do stuff 5</span><span style="margin-left:250px" class="checkboxtext">x</span><br>
+                      <input type="checkbox"><span class="checkboxtext">do stuff 6</span><span style="margin-left:250px" class="checkboxtext">x</span><br>
+                      <input type="checkbox"><span class="checkboxtext">do stuff 7</span><span style="margin-left:252px" class="checkboxtext">x</span><br>
                     </form>
                     <img src="Images/add.png" alt="" width="80px" height="80px">
                   </div>
                   </div>
+                  <br>
                   <br>
 									<img src="Images/fontvideo.png" alt="" width="200px" height="80px">
 								  <div id="myCarousel" class="carousel slide">
@@ -227,16 +245,15 @@
 								  </div>
 								</div>
 
-        <div class="navbar2" style="z-index:5;">
-        <a href="#home">Home</a>
-        <a href="#comm">Community</a>
-        <a href="#time">Timetable</a>
-        <a href="#con">Consulting</a>
-        </div>
+                <div class="navbar2" style="z-index:5;">
+                <a href="#home"><i class="fa fa-home"></i><p>Home</p></a>
+                <a href="#comm"><i class="fa fa-users"></i><p>Community</p></a>
+                <a href="#time"><i class="fa fa-calendar"></i><p>Schedule</p></a>
+                <a href="#con"><i class="fa fa-heart"></i><p>Consulting</p></a>
+                </div>
 
       </div>
       <div class="overlay"></div>
-      </div>
     </body>
 
 		<script>

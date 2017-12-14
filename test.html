@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+        <link rel="stylesheet" href="style3.css">
+        <link rel="stylesheet" type="text/css" href="navi.css">
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="bar.js"></script>
+        <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+        .checkboxtext{
+          font-size: 15px;
+          padding: 20px;
+        }
+  .blue {
+    color: blue;
+  }
+  .highlight {left: 100%;
+    			transform: translateX(-100%);}
+  }
+  html,body        {height:100%;}
+  .wrapper2         {width:80%;height:100%;margin:0 auto;max-width: 1080px}
+  .banner{
+    width: 100%;
+    height: auto;
+}
+.thumbnail{
+    width: 200px;
+    height: 120px;
+}
+.navbar-header2{
+    padding: 0px;
+}
+  </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav id="sidebar">
+                <div id="dismiss">
+                    <i class="glyphicon glyphicon-arrow-left"></i>
+                </div>
+                <div class="sidebar-header">
+                	<div id="profile-container">
+                		<img id="profile-image" src="Images/profile.png">
+                	</div>
+                	<div id="image-change-container">
+                		<a id="image-change">Change your avatar</a>
+                	</div>
+
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li class="active">
+                    	<div id="anonymous">
+                    		<p class="item1">
+                    			Anonymous mode
+                    		</p>
+                        	<div class="item2">
+                        		<div class="button-container1">
+                        			<div class="button1"></div>
+                        		</div>
+                        	</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="notification">
+                        	<p class="item1">
+                        		Push notification
+                        	</p>
+                        	<div class="item2">
+                        		<div class="button-container2">
+                        			<div class="button2"></div>
+                        		</div>
+                        	</div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Messages</a>
+                    </li>
+                    <li>
+                        <a href="#">Change your password</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact developers</a>
+                    </li>
+                     <li>
+                        <a href="#">License and Policy</a>
+                    </li>
+                    <li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="content">
+
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>User's Name</span>
+                            </button>
+                            <form style="float:right;">
+                              <input class="xsearch" type="text" name="search" placeholder="Search..">
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+
+        <div class="navbar2" style="z-index:5;">
+        <a href="#home"><i class="fa fa-home"></i><p>Home</p></a>
+        <a href="#comm"><i class="fa fa-users"></i><p>Community</p></a>
+        <a href="#time"><i class="fa fa-calendar"></i><p>Schedule</p></a>
+        <a href="#con"><i class="fa fa-heart"></i><p>Consulting</p></a>
+        </div>
+<img class="banner" src="Images/story.png" width="460" height="345">
+
+<div class="container">
+  <div style="width:300px; margin-left:auto; margin-right:auto;">
+  <button style="font-size:40px; padding: 20px 40px 20px 40px; width:300px;" type="button"
+  class="btn btn-info" data-toggle="collapse" data-target="#demo">To-do List</button>
+  </div>
+  <div id="demo" class="collapse">
+    <div style="width:200px; margin-left:50px;
+                    background-color: rgb(230, 232, 237);
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 600px;
+                    padding: 20px;
+                    border-radius: 5px;
+                    box-shadow: 5px 15px 15px rgb(20,20,20);">
+    <form action="/action_page.php" method="get">
+      <input type="checkbox"><span class="checkboxtext">do stuff 1</span><span style="margin-left:340px" class="checkboxtext">x</span><br>
+      <input type="checkbox" checked="checked"><span class="checkboxtext">do stuff 2</span><span style="margin-left:335px" class="checkboxtext">x</span><br>
+      <input type="checkbox"><span class="checkboxtext">do stuff 3</span><span style="margin-left:335px" class="checkboxtext">x</span><br>
+      <input type="checkbox"><span class="checkboxtext">do stuff 4</span><span style="margin-left:335px" class="checkboxtext">x</span><br>
+      <input type="checkbox"><span class="checkboxtext">do stuff 5</span><span style="margin-left:335px" class="checkboxtext">x</span><br>
+      <input type="checkbox"><span class="checkboxtext">do stuff 6</span><span style="margin-left:335px" class="checkboxtext">x</span><br>
+      <input type="checkbox"><span class="checkboxtext">do stuff 7</span><span style="margin-left:335px" class="checkboxtext">x</span><br>
+    </form>
+    <img src="Images/add.png" alt="" width="80px" height="80px">
+  </div>
+  </div>
+
+  <img src="Images/fontvideo.png" alt="" width="200px" height="80px">
+  <div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li class="item1 active"></li>
+      <li class="item2"></li>
+      <li class="item3"></li>
+      <li class="item4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="Images/1.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="Images/1.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="Images/1.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beautiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="Images/1.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beautiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div class="container">
+  <img src="Images/frontstory.png" alt="" width="200px" height="80px">
+  <div id="myCarousel2" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li class="item5 active"></li>
+      <li class="item6"></li>
+      <li class="item7"></li>
+      <li class="item8"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="Images/1.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="Images/1.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="Images/1.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beautiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="Images/1.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beautiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel2" role="button">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel2" role="button">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div class="wrapper2">
+    <div class="col-sm-4">
+        <img class="thumbnail" src="Images/1.jpg" width="460" height="345">
+        <p>Shia LaBeouf "Just Do It" Motivational Speech (Original Video by LaBeouf, Rönkkö & Turner)</p>
+    </div>
+    <div class="col-sm-4">
+        <img class="thumbnail" src="Images/1.jpg" width="460" height="345">
+        <p>Shia LaBeouf "Just Do It" Motivational Speech (Original Video by LaBeouf, Rönkkö & Turner)</p>
+    </div>
+    <div class="col-sm-4">
+        <img class="thumbnail" src="Images/1.jpg" width="460" height="345">
+        <p>Shia LaBeouf "Just Do It" Motivational Speech (Original Video by LaBeouf, Rönkkö & Turner)</p>
+    </div>
+    <div class="col-sm-4">
+        <img class="thumbnail" src="Images/1.jpg" width="460" height="345">
+        <p>Shia LaBeouf "Just Do It" Motivational Speech (Original Video by LaBeouf, Rönkkö & Turner)</p>
+    </div>
+    <div class="col-sm-4">
+        <img class="thumbnail" src="Images/1.jpg" width="460" height="345">
+        <p>Shia LaBeouf "Just Do It" Motivational Speech (Original Video by LaBeouf, Rönkkö & Turner)</p>
+    </div>
+</div>
+<br>
+<br>
+<br>
+      </div>
+      <div class="overlay"></div>
+      </div>
+      <script>
+$( "p" ).click(function() {
+  $( this ).toggleClass( "highlight" );
+});
+$(document).ready(function(){
+    // Activate Carousel
+    $("#myCarousel").carousel();
+
+    // Enable Carousel Indicators
+    $(".item1").click(function(){
+        $("#myCarousel").carousel(0);
+    });
+    $(".item2").click(function(){
+        $("#myCarousel").carousel(1);
+    });
+    $(".item3").click(function(){
+        $("#myCarousel").carousel(2);
+    });
+    $(".item4").click(function(){
+        $("#myCarousel").carousel(3);
+    });
+
+    // Enable Carousel Controls
+    $(".left").click(function(){
+        $("#myCarousel").carousel("prev");
+    });
+    $(".right").click(function(){
+        $("#myCarousel").carousel("next");
+    });
+});
+$(document).ready(function(){
+    // Activate Carousel
+    $("#myCarousel2").carousel();
+
+    // Enable Carousel Indicators
+    $(".item5").click(function(){
+        $("#myCarousel2").carousel(0);
+    });
+    $(".item6").click(function(){
+        $("#myCarousel2").carousel(1);
+    });
+    $(".item7").click(function(){
+        $("#myCarousel2").carousel(2);
+    });
+    $(".item8").click(function(){
+        $("#myCarousel2").carousel(3);
+    });
+
+    // Enable Carousel Controls
+    $(".left").click(function(){
+        $("#myCarousel2").carousel("prev");
+    });
+    $(".right").click(function(){
+        $("#myCarousel2").carousel("next");
+    });
+});
+</script>
+=======
+
+       <script type="text/javascript" src="navi.js"></script>
+>>>>>>> master
+    </body>
+</html>
