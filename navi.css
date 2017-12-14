@@ -1,11 +1,17 @@
 /* Mobile */
 @media only screen and (max-width: 450px) {
-	.navbar2 a { font-size: 8px !important;  }
+	.navbar2 a { font-size: 8px !important; 
 }
-
+div#head.link { font-size:30px; 
+}
+h1 {
+	font-size: 20px;
+}
+}
 * {
 	transition: all 0.2s ease;
 }
+
 /* side bar */
 .item1 {width: 70%;
 		position: relative;}
@@ -70,8 +76,7 @@
 	display: inline-block;
 }
 .search-icon {
-	width: 50px;
-	height: 50px;
+	height: 100%;
 	float: right;
 }
 .search-input {
