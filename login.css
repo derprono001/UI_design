@@ -44,7 +44,7 @@ input {
 		width:100%;
 	}
 	#submit{
-		transform: translate(-50%,0%) !important;
+		transform: translate(0%,0%) !important;
 		margin-top:10px;
 		margin-bottom: 10px;
 	}
@@ -54,12 +54,10 @@ input {
 	padding: 5% 10px 20px 5% ;
 }
 #submit {
-	display: block;
 	position: relative;
-	top:50%;
-	left:50%;
-	transform: translate(-50%,-50%);
-	border-radius: 3px;
+	top: 50%;
+	transform: translate(0%,-50%);
+	border-radius: 3px;	
 	color:black;
 }
 #login {
