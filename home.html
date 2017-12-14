@@ -14,12 +14,16 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="bar.js"></script>
 
-				<style>
+				<style
 				.carousel-inner > .item > img,
 				.carousel-inner > .item > a > img {
 						width: 70%;
 						margin: auto;
 				}
+        .checkboxtext{
+          font-size: 24px;
+          padding: 20px;
+        }
 				</style>
 
     </head>
@@ -64,7 +68,6 @@
                     <li><a href="#" class="fasdfdasf">fdasfdsaf</a></li>
                 </ul>
             </nav>
-
             <div id="content">
 
                 <nav class="navbar navbar-default">
@@ -78,8 +81,33 @@
                         </div>
                     </div>
                 </nav>
-
 								<div class="container">
+                  <div style="width:300px; margin-left:auto; margin-right:auto;">
+                  <button style="font-size:40px; padding: 20px 40px 20px 40px; width:300px;" type="button"
+                  class="btn btn-info" data-toggle="collapse" data-target="#demo">To-do List</button>
+                  </div>
+                  <div id="demo" class="collapse">
+                    <div style="width:200px; margin-left:50px;
+                                    background-color: rgb(230, 232, 237);
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    width: 600px;
+                                    padding: 20px;
+                                    border-radius: 5px;
+                                    box-shadow: 5px 15px 15px rgb(20,20,20);">
+                    <form action="/action_page.php" method="get">
+                      <input type="checkbox"><span class="checkboxtext">do stuff 1</span><span style="margin-left:340px" class="checkboxtext">x</span><br>
+                      <input type="checkbox" checked="checked"><span class="checkboxtext">do stuff 2</span><span style="margin-left:335px" class="checkboxtext">x</span><br>
+                      <input type="checkbox"><span class="checkboxtext">do stuff 3</span><span style="margin-left:335px" class="checkboxtext">x</span><br>
+                      <input type="checkbox"><span class="checkboxtext">do stuff 4</span><span style="margin-left:335px" class="checkboxtext">x</span><br>
+                      <input type="checkbox"><span class="checkboxtext">do stuff 5</span><span style="margin-left:335px" class="checkboxtext">x</span><br>
+                      <input type="checkbox"><span class="checkboxtext">do stuff 6</span><span style="margin-left:335px" class="checkboxtext">x</span><br>
+                      <input type="checkbox"><span class="checkboxtext">do stuff 7</span><span style="margin-left:335px" class="checkboxtext">x</span><br>
+                    </form>
+                    <img src="Images/add.png" alt="" width="80px" height="80px">
+                  </div>
+                  </div>
+                  <br>
 									<img src="Images/fontvideo.png" alt="" width="200px" height="80px">
 								  <div id="myCarousel" class="carousel slide">
 								    <!-- Indicators -->
