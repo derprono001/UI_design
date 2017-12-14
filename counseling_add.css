@@ -1,0 +1,33 @@
+html{
+	height:100%;
+}
+.flex {
+	display: flex;
+	margin-bottom: 100px;
+}
+#advisor{
+	text-align: center;
+}
+#advisor-image-container{
+	;
+	position: relative;
+	height: 80px;
+	width: 80px;
+	left: 50%;
+	transform: translate(-50%);
+
+	
+}
+#advisor-image{
+	display: none;
+	width: 100%;
+	border-radius: 50%;
+	border: 2px solid black;
+}
+#submit{
+	position: relative;
+	top: 60%;
+}
+td{
+	padding: 20px;
+}

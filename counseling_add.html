@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="style3.css">
     <link rel="stylesheet" type="text/css" href="navi.css">
+    <link rel="stylesheet" type="text/css" href="counseling_add.css">
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -33,6 +34,10 @@
 
 textarea {
     width : 100%;
+    border-top: 1px;
+}
+* {
+    transition: all 0.2s ease;
 }
 
 /* The Modal (background) */
@@ -86,8 +91,9 @@ table {
     margin : 0 auto;
     display : block;
 }
-
-
+#content-body{
+    padding: 20px;
+}
 
 
 </style>
@@ -172,9 +178,26 @@ table {
              <textarea rows="2" cols="50"></textarea><br>
              <h1>Content</h1>
              <textarea rows="6" cols="50"></textarea><br>
-             <button type="button" style="margin : 20px;">Submit</button>
+             <div id="note">
+                 <div class="alert alert-info">
+                    <strong>Note:</strong> sessions submitted without choosing an advisor will be collected
+                    into a message board where the session will be subsequently designated to a random counselor. 
+                </div>
+             </div>
              <!-- Trigger/Open The Modal -->
-             <button type="button" style="margin : 20px;" id="myBtn">Choose an advisor</button>
+             <div class="flex">
+                <div>
+                        <button id="submit" type="button" style="margin : 20px;">Submit</button>
+                </div>
+                <div id="advisor">
+                    <div id="advisor-image-container">
+                        <img id="advisor-image" src="">
+                    </div>
+                    <p id=advisor-name></p>
+                    <button type="button" style="margin : 20px;" id="myBtn">Choose an advisor</button>
+                </div>
+             </div>
+             
 
              <!-- The Modal -->
              <div id="myModal" class="modal">
@@ -191,23 +214,23 @@ table {
                         </tr>
 
                         <tr>
-                            <td>
-                                <img src="./images/profile.png" width="20" height="20">Anna K.
+                            <td class="advisor-list-item">
+                                <p><img src="./images/profile.png" width="20" height="20"><span>Anna K.</span></p>
                             </td>
                         </tr>
                         <tr>
-                            <td>
-                                <img src="./images/profile.png" width="20" height="20">Brian H.
+                            <td class="advisor-list-item">
+                                <p ><img src="./images/profile.png" width="20" height="20"><span>Brian H.</span></p>
                             </td>
                         </tr>
                         <tr>
-                            <td>
-                                <img src="./images/profile.png" width="20" height="20">Sabastian C.
+                            <td class="advisor-list-item">
+                                <p ><img src="./images/profile.png" width="20" height="20"><span>Sabastian C.</span></p>
                             </td>
                         </tr>
                         <tr>
-                            <td>
-                                <img src="./images/profile.png" width="20" height="20">John D.
+                            <td class="advisor-list-item">
+                                <p ><img id="pic" src="./images/profile.png" width="20" height="20"><span>John D.</span></p>
                             </td>
                         </tr>
                     </table>
@@ -219,14 +242,14 @@ table {
 
         </div>
     </div>
-    <div class="navbar2">
-        <a href="#home">Home</a>
-        <a href="#comm">Community</a>
-        <a href="#time">Timetable</a>
-        <a href="#con">Consulting</a>
-
-        <div class="overlay"></div>
+    <div class="navbar2" style="z-index:5;">
+        <a href="#home"><i class="fa fa-home"></i><p>Home</p></a>
+        <a href="#comm"><i class="fa fa-users"></i><p>Community</p></a>
+        <a href="#time"><i class="fa fa-calendar"></i><p>Schedule</p></a>
+        <a href="#con"><i class="fa fa-heart"></i><p>Consulting</p></a>
     </div>
+        <div class="overlay"></div>
+    
 </div>
 
 <script>
@@ -237,7 +260,6 @@ table {
 var btn = document.getElementById("myBtn");
 
 var cn = document.getElementById("cnbtn");
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
@@ -262,5 +284,7 @@ window.onclick = function(event) {
     }
 }
 </script>
+<script type="text/javascript" src="navi.js"></script>
+<script type="text/javascript" src="counseling_add.js"></script>
 </body>
 </html>
