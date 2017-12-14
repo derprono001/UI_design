@@ -15,23 +15,24 @@
         <script src="bar.js"></script>
 
         <style>
+        h1{
+          padding: 0px 10px 0px 10px;
+        }
         html,body        {height:100%;}
         .wrapper2         {width:80%;height:100%;margin:0 auto;max-width: 1080px}
-        .banner{
-          width: 100%;
-          height: auto;
-        }
-        .thumbnail{
-          width: 200px;
-          height: 120px;
-        }
-        .navbar-header2{
-          padding: 0px;
-        }
+        .h_iframe        {position:relative;}
+        .h_iframe .ratio {display:block;width:100%;height:auto;}
+        .h_iframe iframe {position:absolute;top:0;left:0;width:100%; height:100%;}
         </style>
 
     </head>
     <body>
+      <div class="navbar2">
+      <a href="#home">Home</a>
+      <a href="#comm">Community</a>
+      <a href="#time">Timetable</a>
+      <a href="#con">Consulting</a>
+      </div>
         <div class="wrapper">
             <nav id="sidebar">
                 <div id="dismiss">
@@ -78,56 +79,31 @@
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
 
-                        <div class="navbar-header ">
+                        <div class="navbar-header">
                             <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
                                 <i class="glyphicon glyphicon-align-left"></i>
                                 <span>User's Name</span>
                             </button>
-                            <form style="float:right;">
-                              <input class="xsearch" type="text" name="search" placeholder="Search..">
-                            </form>
                         </div>
                     </div>
                 </nav>
 
-        <div class="navbar2" style="z-index:5;">
-        <a href="home.html">Home</a>
-        <a href="#comm">Community</a>
-        <a href="#time">Timetable</a>
-        <a href="#con">Consulting</a>
-        </div>
-        <img class="banner" src="Images/videos.png" width="460" height="345">
-      <div class="wrapper2">
-        <a href="video_player.html"><div class="col-sm-4">
-        <img class="thumbnail" src="Images/1.jpg" width="460" height="345">
-        <p>Shia LaBeouf "Just Do It" Motivational Speech (Original Video by LaBeouf, Rönkkö & Turner)</p>
-      </div></a>
-        <a href="video_player2.html">
-        <div class="col-sm-4">
-        <img class="thumbnail" src="Images/2.jpg" width="460" height="345">
-        <p>Sorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-      </div></a>
-        <a href="video_player3.html">
-        <div class="col-sm-4">
-        <img class="thumbnail" src="Images/3.jpg" width="460" height="345">
-        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div></a>
-      <a href="video_player4.html">
-        <div class="col-sm-4">
-        <img class="thumbnail" src="Images/4.jpg" width="460" height="345">
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
-      </div></a>
-      <a href="video_player4.html">
-        <div class="col-sm-4">
-        <img class="thumbnail" src="Images/5.jpg" width="460" height="345">
-        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam</p>
-      </div></a>
+
+          <div class="wrapper2">
+          <div class="h_iframe">
+              <img class="ratio" src="http://placehold.it/16x9"/>
+              <iframe src="https://www.youtube.com/embed/D6AJjmiYXtk" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <h3>Shia LaBeouf "Just Do It" Motivational Speech (Original Video by LaBeouf, Rönkkö & Turner)</h3>
+          <hr>
+          <h4 style="display:inline;"><font color="#a0a2a5">Test Subject</font></h4>
+          <button type="button" style="float: right; display:inline;">
+              <span>Subcribe</span>
+          </button>
+          <hr>
       </div>
-      <br>
-      <br>
-      <br>
-      <br><br>
-    </div>
+      </div>
+
       <div class="overlay"></div>
       </div>
     </body>
